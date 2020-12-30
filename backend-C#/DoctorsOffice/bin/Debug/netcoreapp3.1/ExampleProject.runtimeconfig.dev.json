@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\devapo1\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\devapo1\\.nuget\\packages"
-    ]
-  }
-}
