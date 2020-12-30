@@ -1,0 +1,33 @@
+.visit-card {
+    margin: 20px;
+    border-radius: 10px !important;
+    background-color: white !important;
+    width: 50%;
+    
+}
+.visit-added-card {
+    width: 20%;
+    text-align: center;
+}
+#root-visit {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#visit-button {
+    height: 50%;
+    border-color: white;
+    background-color: rgba(160, 188, 227, 0.726);
+}
+
+#visit-button:hover {
+    border-color: white;
+    background-color: rgba(129, 169, 224, 0.904);
+}
+
+@media (max-width: 800px) {
+    .visit-card {
+        width: 80%;
+    }
+}

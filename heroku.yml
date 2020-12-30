@@ -1,0 +1,6 @@
+
+build:
+  stdin_open: true
+  docker:
+    backend: ./backend/Dockerfile.backend
+    frontend: ./frontend/Dockerfile.frontend

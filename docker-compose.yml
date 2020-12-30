@@ -1,0 +1,26 @@
+version: "3.2"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./docker/backend/Dockerfile.backend
+    ports:
+      - "8080:8080"
+
+  frontend:
+    stdin_open: true
+    build: 
+      context: .
+      dockerfile: ./docker/frontend/Dockerfile.frontend
+    volumes:
+      - ./frontend:/app
+      # One-way volume to use node_modules from inside image
+      - /app/node_modules
+    ports:
+      - "3001:3000"
+    environment:
+       - NODE_ENV=development
+    command: npm start
+
+#volumes:
+#  postgres_data:

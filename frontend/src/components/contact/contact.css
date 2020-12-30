@@ -1,0 +1,22 @@
+
+#contactCardDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#contactCardDiv .card{
+    width: 60%;
+    border-radius: 10px !important;
+}
+
+#contactCardDiv .card .card-title{
+    font-size: 30px;
+}
+
+#contactCardDiv .card .card-body{
+    padding-bottom: 0;
+}
+
+h4{
+    margin-bottom: 0;
+}

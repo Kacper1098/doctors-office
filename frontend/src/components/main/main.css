@@ -1,0 +1,135 @@
+.nav-link{
+    font-size: 20px;
+    margin-left: 30px;
+    color: black !important;
+}
+.bg-custom{
+    background-color: #686868;
+}
+.navbar{
+    height: 40px;
+    font-family:AdagioSlab;
+}
+
+nav.navbar {
+    background-color: white !important;
+    padding-right: .3rem;
+    margin: 20px;
+    box-shadow: 0 6px 2px -2px rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+#responsive-navbar-nav {
+    background-color: white !important;
+    z-index: 1;
+}
+.navbar {
+    height: 55px;
+}
+.nav-item{
+    color: black !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+.line{
+    margin: 0px;
+}
+
+body {
+
+    background-image: url("../../assets/background.jpg");
+    background-size: 100%;   
+    height: 100%;
+}
+
+.main .card {
+    background-color: rgba(160, 188, 227, 0.726) !important;
+    margin-left: 30px;
+    border:none !important;
+    border-radius: 0px !important;
+}
+
+.main .card-body {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .card .btn {
+    display: flex;
+    justify-content: center;
+    /* color: black; */
+    border-color: white;
+    background-color: rgba(160, 188, 227, 0.726);
+}
+
+.main .card .btn:hover {
+    /* color: black; */
+    border-color: white;
+    background-color: rgba(129, 169, 224, 0.904);
+
+}
+
+.main .card-title {
+    text-align: center;
+}
+
+.main .card-container {
+    width: 100%;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-align-last: center;
+    color: white;
+}
+
+.main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+}
+
+#logoIcon {
+    padding-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+    .main .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .main .card {
+        margin-bottom: 20px;
+        width: 30rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .main .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .main .card {
+        margin-bottom: 20px;
+        width: 18rem !important;
+    }
+}
