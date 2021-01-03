@@ -1,4 +1,6 @@
+using System;
 using System.IO;
+using System.Linq;
 using DoctorsOffice.DbModels;
 using DoctorsOffice.Repositories;
 using DoctorsOffice.Services;
@@ -15,16 +17,20 @@ namespace DoctorsOffice
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MyDbContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DoctorsOfficeContext")));
+            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING") ??
+                                   Configuration.GetConnectionString("DoctorsOfficeContext");
+            services.AddDbContext<MyDbContext>(opt =>
+                opt.UseNpgsql(connectionString));
 
             services.AddScoped<VisitRepository>();
             services.AddScoped<DoctorRepository>();
@@ -40,9 +46,9 @@ namespace DoctorsOffice
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MyDbContext apiContext)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MyDbContext dbContext)
         {
-            apiContext.Database.Migrate(); 
+            dbContext.Database.Migrate();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -53,14 +59,20 @@ namespace DoctorsOffice
                     .AllowAnyHeader()
                     .AllowAnyMethod()
             );
-            
+
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+            ApplyMigrations(dbContext);
+        }
+
+        private void ApplyMigrations(DbContext context)
+        {
+            if (context.Database.GetPendingMigrations().Any())
             {
-                endpoints.MapControllers();
-            });
-            
+                context.Database.Migrate();
+            }
         }
     }
 }
