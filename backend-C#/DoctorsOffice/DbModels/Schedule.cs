@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace DoctorsOffice.DbModels
 {
@@ -9,7 +10,8 @@ namespace DoctorsOffice.DbModels
         public DateTime Date { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-
+        
+        [JsonIgnore]
         public Doctor Doctor { get; set; }
 
     }

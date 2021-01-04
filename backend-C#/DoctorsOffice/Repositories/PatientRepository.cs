@@ -14,7 +14,9 @@ namespace DoctorsOffice.Repositories
 
         public Patient Save(Patient patient)
         {
-            return _context.Patients.Add(patient).Entity;
+            var addedPatient = _context.Patients.Add(patient).Entity;
+            _context.SaveChanges();
+            return addedPatient;
         }
 
         public Patient FindById(string id)

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DoctorsOffice.DbModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace DoctorsOffice.Repositories
 {
@@ -25,12 +26,17 @@ namespace DoctorsOffice.Repositories
 
         public Visit Save(Visit visit)
         {
-            return _context.Visits.Add(visit).Entity;
+            var addedVisit = _context.Visits.Add(visit).Entity;
+            _context.SaveChanges();
+            return addedVisit;
         }
 
         public List<Visit> FindForPatient(string identityNumber, string firstName, string lastName)
         {
             return _context.Visits
+                .Include(v => v.Doctor)
+                .Include(v => v.Facility)
+                .Include(v => v.Patient)
                 .Where(visit =>
                     visit.Patient.IdentityNumber == identityNumber &&
                     visit.Patient.FirstName == firstName &&
