@@ -1,12 +1,12 @@
-package pl.damkac.doctor;
+package pl.kacste.doctor;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Fetch;
-import pl.damkac.facility.Facility;
-import pl.damkac.schedule.Schedule;
+import pl.kacste.facility.Facility;
+import pl.kacste.schedule.Schedule;
 
 import javax.persistence.*;
 import java.util.Set;

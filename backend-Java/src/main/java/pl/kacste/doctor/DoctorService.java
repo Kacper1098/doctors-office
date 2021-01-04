@@ -1,9 +1,9 @@
-package pl.damkac.doctor;
+package pl.kacste.doctor;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import pl.damkac.visit.Visit;
-import pl.damkac.visit.VisitService;
+import pl.kacste.visit.Visit;
+import pl.kacste.visit.VisitService;
 
 import java.time.LocalDate;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pl.damkac;
+package pl.kacste;
 
 
 import org.springframework.boot.SpringApplication;

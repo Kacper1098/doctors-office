@@ -1,4 +1,4 @@
-package pl.damkac.facility;
+package pl.kacste.facility;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,10 +1,10 @@
-package pl.damkac.schedule;
+package pl.kacste.schedule;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pl.damkac.doctor.Doctor;
+import pl.kacste.doctor.Doctor;
 
 import javax.persistence.*;
 import java.time.LocalDate;

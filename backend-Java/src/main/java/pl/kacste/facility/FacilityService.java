@@ -1,4 +1,4 @@
-package pl.damkac.facility;
+package pl.kacste.facility;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

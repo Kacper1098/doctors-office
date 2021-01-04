@@ -1,9 +1,9 @@
-package pl.damkac.visit;
+package pl.kacste.visit;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pl.damkac.patient.Patient;
+import pl.kacste.patient.Patient;
 
 import java.time.LocalDateTime;
 

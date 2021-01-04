@@ -1,4 +1,4 @@
-package pl.damkac.visit;
+package pl.kacste.visit;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

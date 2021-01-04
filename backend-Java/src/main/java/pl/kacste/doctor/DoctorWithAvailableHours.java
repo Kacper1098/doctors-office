@@ -1,4 +1,4 @@
-package pl.damkac.doctor;
+package pl.kacste.doctor;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

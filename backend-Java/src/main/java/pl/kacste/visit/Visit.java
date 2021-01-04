@@ -1,12 +1,12 @@
-package pl.damkac.visit;
+package pl.kacste.visit;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pl.damkac.doctor.Doctor;
-import pl.damkac.facility.Facility;
-import pl.damkac.patient.Patient;
+import pl.kacste.doctor.Doctor;
+import pl.kacste.facility.Facility;
+import pl.kacste.patient.Patient;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package pl.damkac.visit;
+package pl.kacste.visit;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;

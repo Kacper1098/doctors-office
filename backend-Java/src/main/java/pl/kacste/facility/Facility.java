@@ -1,4 +1,4 @@
-package pl.damkac.facility;
+package pl.kacste.facility;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
-import pl.damkac.doctor.Doctor;
+import pl.kacste.doctor.Doctor;
 
 import javax.persistence.*;
 import java.util.Set;

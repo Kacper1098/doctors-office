@@ -1,4 +1,4 @@
-package pl.damkac.patient;
+package pl.kacste.patient;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

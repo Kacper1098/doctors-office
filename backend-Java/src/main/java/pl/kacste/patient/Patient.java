@@ -1,4 +1,4 @@
-package pl.damkac.patient;
+package pl.kacste.patient;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

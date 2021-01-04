@@ -1,4 +1,4 @@
-package pl.damkac.doctor;
+package pl.kacste.doctor;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
