@@ -1,7 +1,5 @@
-﻿using DoctorsOffice.DbModels;
-using DoctorsOffice.Repositories;
-
-namespace DoctorsOffice.Services
+﻿
+namespace DoctorsOffice.Patients
 {
     public class PatientService
     {

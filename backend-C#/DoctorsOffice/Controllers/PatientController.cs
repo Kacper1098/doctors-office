@@ -1,5 +1,4 @@
-﻿using DoctorsOffice.DbModels;
-using DoctorsOffice.Services;
+﻿using DoctorsOffice.Patients;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DoctorsOffice.Controllers

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using DoctorsOffice.Dto;
-using DoctorsOffice.Services;
+using DoctorsOffice.Doctors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DoctorsOffice.Controllers

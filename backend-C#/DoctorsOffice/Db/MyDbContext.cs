@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using DoctorsOffice.Doctors;
+using DoctorsOffice.Facilities;
+using DoctorsOffice.Patients;
+using DoctorsOffice.Schedules;
+using DoctorsOffice.Visits;
 
-namespace DoctorsOffice.DbModels
+namespace DoctorsOffice.Db
 {
     public class MyDbContext : DbContext
     {

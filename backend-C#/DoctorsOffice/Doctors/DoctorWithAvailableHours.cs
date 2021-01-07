@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using DoctorsOffice.DbModels;
 
-namespace DoctorsOffice.Dto
+namespace DoctorsOffice.Doctors
 {
     public class DoctorWithAvailableHours
     {

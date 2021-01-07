@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using DoctorsOffice.DbModels;
-using DoctorsOffice.Dto;
-using DoctorsOffice.Services;
+using DoctorsOffice.Visits;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DoctorsOffice.Controllers

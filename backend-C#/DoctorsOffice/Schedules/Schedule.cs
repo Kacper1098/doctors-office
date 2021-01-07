@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Text.Json.Serialization;
+using DoctorsOffice.Doctors;
 
-namespace DoctorsOffice.DbModels
+namespace DoctorsOffice.Schedules
 {
     public class Schedule
     {

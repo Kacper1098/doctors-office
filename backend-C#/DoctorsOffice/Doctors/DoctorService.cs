@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DoctorsOffice.DbModels;
-using DoctorsOffice.Dto;
-using DoctorsOffice.Repositories;
+using DoctorsOffice.Visits;
 
-namespace DoctorsOffice.Services
+namespace DoctorsOffice.Doctors
 {
     public class DoctorService 
     {

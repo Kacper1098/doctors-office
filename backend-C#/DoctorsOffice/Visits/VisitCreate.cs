@@ -1,7 +1,7 @@
 ﻿using System;
-using DoctorsOffice.DbModels;
+using DoctorsOffice.Patients;
 
-namespace DoctorsOffice.Dto
+namespace DoctorsOffice.Visits
 {
     public class VisitCreate
     {

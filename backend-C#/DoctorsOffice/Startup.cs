@@ -1,12 +1,11 @@
-using System;
-using System.IO;
 using System.Linq;
-using DoctorsOffice.DbModels;
-using DoctorsOffice.Repositories;
-using DoctorsOffice.Services;
+using DoctorsOffice.Db;
+using DoctorsOffice.Doctors;
+using DoctorsOffice.Facilities;
+using DoctorsOffice.Patients;
+using DoctorsOffice.Visits;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,8 +26,7 @@ namespace DoctorsOffice
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING") ??
-                                   Configuration.GetConnectionString("DoctorsOfficeContext");
+            var connectionString = Configuration.GetConnectionString("DoctorsOfficeContext");
             services.AddDbContext<MyDbContext>(opt =>
                 opt.UseNpgsql(connectionString));
 

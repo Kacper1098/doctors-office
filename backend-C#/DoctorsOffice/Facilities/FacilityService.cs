@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using DoctorsOffice.DbModels;
-using DoctorsOffice.Repositories;
 
-namespace DoctorsOffice.Services
+namespace DoctorsOffice.Facilities
 {
     public class FacilityService
     {

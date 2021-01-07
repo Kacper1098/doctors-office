@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using DoctorsOffice.DbModels;
+using DoctorsOffice.Db;
 using Microsoft.EntityFrameworkCore;
 
-namespace DoctorsOffice.Repositories
+namespace DoctorsOffice.Visits
 {
     public class VisitRepository
     {

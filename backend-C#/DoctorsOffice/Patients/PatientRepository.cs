@@ -1,7 +1,7 @@
 ﻿using System.Linq;
-using DoctorsOffice.DbModels;
+using DoctorsOffice.Db;
 
-namespace DoctorsOffice.Repositories
+namespace DoctorsOffice.Patients
 {
     public class PatientRepository
     {

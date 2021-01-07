@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
+using DoctorsOffice.Doctors;
 
-namespace DoctorsOffice.DbModels
+namespace DoctorsOffice.Facilities
 {
     public class Facility
     {

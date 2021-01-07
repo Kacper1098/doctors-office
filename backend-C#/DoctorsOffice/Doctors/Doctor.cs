@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
+using DoctorsOffice.Facilities;
+using DoctorsOffice.Schedules;
 
-namespace DoctorsOffice.DbModels
+namespace DoctorsOffice.Doctors
 {
     public class Doctor
     {
